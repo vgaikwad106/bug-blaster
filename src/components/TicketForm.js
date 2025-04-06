@@ -21,12 +21,20 @@ export default function TicketForm() {
   const handleSubmit = (e) => {
     //Whenever the form gets submitted the page reloads, and we can deny that by using preventDefault.
     e.preventDefault();
+
+    const ticketData = {
+      id: new Date().toISOString(),
+      title,
+      description,
+      priority,
+    };
+
     clearForm();
   };
 
   return (
     <form onSubmit={handleSubmit} className="ticket-form">
-      <h3>Add a ticket</h3>
+      <h3>Ticket Form</h3>
       <div>
         <label>Title</label>
         <input
