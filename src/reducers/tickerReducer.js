@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React from "react";
 
 //state -> the current state of tickets. action (type and payload) -> the type of action e.g. Add, Edit, Delete
 

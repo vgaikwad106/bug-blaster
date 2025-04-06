@@ -41,7 +41,11 @@ label {
   border: 1px solid #ccc;
   border-radius: 5px;
   position: relative;
+}
 
+.created-on{
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .ticket-form{
@@ -105,12 +109,12 @@ legend{
 }
 
 .priority-dot {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
 }
 
 .priority-low {
@@ -133,4 +137,22 @@ select {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+.delete-button{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.edit-button{
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
 }
