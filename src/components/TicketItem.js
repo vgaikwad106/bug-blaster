@@ -15,7 +15,7 @@ export default function TicketItem({ ticket, dispatch }) {
       <p>{description}</p>
       <p className="created-on">Created on {id}</p>
       <button
-        className="edit-button"
+        className="secondary-button"
         onClick={() =>
           dispatch({ type: "SET_EDITING_TICKET", payload: ticket })
         }
