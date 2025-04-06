@@ -4,14 +4,14 @@ import React from "react";
 
 export default function ticketReducer(state, action) {
   switch (action.type) {
-    case "ADD TICKET":
+    case "ADD_TICKET":
       //state is immutable, so we take the state, we spread it over and copy to create a new instance of the state
       return {
         ...state,
         tickets: [...state.tickets, action.payload],
       };
 
-    case "UPDATE TICKET":
+    case "UPDATE_TICKET":
       return {
         ...state,
         tickets: state.tickets.map((ticket) =>
@@ -19,13 +19,26 @@ export default function ticketReducer(state, action) {
         ),
       };
 
-    case "DELETE TICKET":
+    case "DELETE_TICKET":
       return {
         ...state,
         tickets: state.tickets.filter(
           (ticket) => ticket.id !== action.payload.id
         ),
       };
+
+    case "SET_EDITING_TICKET":
+      return {
+        ...state,
+        editingTicket: action.payload,
+      };
+
+    case "CLEAR_EDITING_TICKET":
+      return {
+        ...state,
+        editingTicket: null,
+      };
+
     default:
       return state;
   }

@@ -16,13 +16,15 @@ export default function TicketItem({ ticket, dispatch }) {
       <p className="created-on">Created on {id}</p>
       <button
         className="edit-button"
-        onClick={() => dispatch({ type: "DELETE TICKET", payload: { id } })}
+        onClick={() =>
+          dispatch({ type: "SET_EDITING_TICKET", payload: ticket })
+        }
       >
         Edit
       </button>
       <button
         className="delete-button"
-        onClick={() => dispatch({ type: "DELETE TICKET", payload: { id } })}
+        onClick={() => dispatch({ type: "DELETE_TICKET", payload: { id } })}
       >
         Delete
       </button>
