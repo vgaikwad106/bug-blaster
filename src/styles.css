@@ -3,22 +3,23 @@ body {
   font-family: 'Arial', sans-serif !important;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
   color: #333;
 }
 
 h1 {
   margin: 50px;;
+  color: #004dd4;
 }
-
 
 textarea {
   font-family: inherit;
-  min-height: 200px;
+  min-height: 100px;
 }
 
 label {
   display: block;
+  text-align: left;
   padding-bottom: 10px;
 }
 
@@ -26,7 +27,6 @@ label {
   max-width: 720px;
   margin: 0 auto;
 }
-
 
 .ticket-list {
   margin-bottom: 200px;
@@ -44,6 +44,13 @@ label {
 
 }
 
+.ticket-form{
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 5%);
+}
+
 /* src/styles/App.css */
 
 .priority-fieldset {
@@ -54,6 +61,10 @@ label {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+legend{
+  text-align: left;
 }
 
 .priority-label {
@@ -80,7 +91,7 @@ label {
 }
 
 .button {
-  background-color: #007bff;
+  background-color: #004dd4;
   color: white;
   border: none;
   padding: 10px 20px;
