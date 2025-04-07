@@ -50,6 +50,12 @@ export default function ticketReducer(state, action) {
         editingTicket: null,
       };
 
+    case "SET_SORTING":
+      return {
+        ...state,
+        sortPreference: action.payload,
+      };
+
     default:
       return state;
   }
